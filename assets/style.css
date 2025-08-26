@@ -8,11 +8,13 @@ body {
   background-color: #9fd3c7;
 }
 
+.container{
+    width: 100%;
+}
+
 .calculator{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 400px;
+    margin: 80px auto;
 }
 
 .calculator form{
@@ -36,7 +38,7 @@ body {
 }
 
 .calculator form .display{
-    width: 95%;
+    width: 94%;
     background: transparent;
     box-shadow: none;
     text-align: right;
@@ -49,5 +51,5 @@ body {
 }
 
 .calculator form .equal{ 
-    width: 46%;
+    width: 45%;
 }

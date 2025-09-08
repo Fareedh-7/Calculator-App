@@ -11,39 +11,41 @@
     <div class="calculator">
         <form>
             <div>
-                <input type="text" class="display">
+                <input type="text" class="display" disabled>
             </div>
             <div>
-                <input type="button" value="AC" class="operators">
-                <input type="button" value="DE" class="operators">
-                <input type="button" value="." class="operators">
-                <input type="button" value="/" class="operators">
+                <input type="button" value="AC" onclick="clearDisplay()" class="operators">
+                <input type="button" value="DE" onclick="deleteLast()" class="operators">
+                <input type="button" value="." onclick="appear('.')" class="operators">
+                <input type="button" value="/" onclick="appear('/')" class="operators">
             </div>
             <div>
-                <input type="button" value="9" onclick=  "display.value+='9'">
-                <input type="button" value="8">
-                <input type="button" value="7">
-                <input type="button" value="x" class="operators">
+                <input type="button" value="9" onclick="appear('9')">
+                <input type="button" value="8" onclick="appear('8')">
+                <input type="button" value="7" onclick="appear('7')">
+                <input type="button" value="*" onclick="appear('*')" class="operators">
             </div>
             <div>
-                <input type="button" value="6">
-                <input type="button" value="5">
-                <input type="button" value="4">
-                <input type="button" value="+" class="operators">
+                <input type="button" value="6" onclick="appear('6')">
+                <input type="button" value="5" onclick="appear('5')">
+                <input type="button" value="4" onclick="appear('4')">
+                <input type="button" value="+" onclick="appear('+')" class="operators">
             </div>
             <div>
-                <input type="button" value="1">
-                <input type="button" value="2">
-                <input type="button" value="3">
-                <input type="button" value="-" class="operators">
+                <input type="button" value="1" onclick="appear('1')">
+                <input type="button" value="2" onclick="appear('2')">
+                <input type="button" value="3" onclick="appear('3')">
+                <input type="button" value="-" onclick="appear('-')" class="operators">
             </div>
             <div>
-                <input type="button" value="00">
-                <input type="button" value="0">
-                <input type="button" value="=" class="operators equal">
+                <input type="button" value="00" onclick="appear('00')">
+                <input type="button" value="0" onclick="appear('0')">
+                <input type="button" value="=" onclick="result()" class="operators equal">
             </div>
         </form>
     </div>
 </div>    
+
+<script src="./assets/index.js"></script>
 </body>
 </html>
